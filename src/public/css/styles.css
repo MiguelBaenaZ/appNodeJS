@@ -1,0 +1,25 @@
+body{
+    background: #f5f6f5;
+    font-family: 'Saira', sans-serif;
+    overflow: hidden;
+}
+.index{
+    width:  100vw;
+    height: 100vh;
+}
+.masthead{
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background-image: url('/img/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.masthead h1{
+    font-size: 4rem;
+    margin:0;
+    padding:0;
+}

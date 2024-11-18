@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Save Link Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Opciones
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/links">Mostrar Links</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/links/add">Añadir Link</a>
+          </div>
+        </li>
+        <a class="nav-item nav-link" href="/profile">Perfil</a>
+        <a class="nav-item nav-link" href="/logout">Salir</a>
+        {{else}}
+        <a class="nav-item nav-link active" href="/signin">Iniciar Sesion<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="/signup">Crear Usuario</a>
+        {{/if}}
+        
+      </div>
+    </div>
+  </div>
+</nav>
